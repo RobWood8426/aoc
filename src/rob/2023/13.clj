@@ -47,7 +47,7 @@
            rside (take smallest-side rside)
            mirror-off-by-1? (= lside rside)]
        (cond
-         mirror?
+         mirror-off-by-1?
          (conj acc reflection-index)
 
          :else
